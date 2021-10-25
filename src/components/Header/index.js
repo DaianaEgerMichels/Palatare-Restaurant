@@ -5,12 +5,12 @@ import PropTypes from 'prop-types';
 class Header extends React.Component{
     render(){
         return(
-            <div>
+            <div className="header-geral">
                 <div className="header">
                 <img src={this.props.src} alt={this.props.alt}/>
                 <h2>{this.props.name}</h2>
                 </div>
-                <div>
+                <div className="title">
                     <h1>{this.props.title}</h1>
                 </div>
             </div>
