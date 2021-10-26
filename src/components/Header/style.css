@@ -1,31 +1,66 @@
-.header-geral{
+*{
+    margin:0;
+    padding: 0;
+    border:0;
+    font-size: 100%;
+    font: inherit;
+    width: 100%;
+}
+
+header{
     display: flex;
-    align-items: baseline;
+    align-items: center;
     flex-direction: row;
-    justify-content: start;
-    gap: 50px;
+    justify-content: space-around;
+    flex-shrink: 2;
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('CaviarDreams.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Magista Brush';
+    src: url('Magista\ Brush.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 .header{
     display: flex;
     align-items: flex-start;
     flex-direction: row;
+    flex-shrink: 2;
     gap: 10px;
+    width: 300px;
+    word-wrap: none;
 }
 
 img{
     border-radius: 40%;
     border: 1px dashed rgb(43, 43, 43);
+    margin-top: 10px;
+    margin-left: 8px;
+    margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
 }
 
 h2{
     font-style: italic;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Magista Brush', 'Times New Roman', Times, serif;
     font-size: 16px;
-    margin-top: 25px;
+    margin-top: 40px;
+    color: white;
+    
 }
 
 .title{
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Caviar Dreams', 'Times New Roman', Times, serif;
+    color: rgb(160, 133, 60);
+    font-size: 26px;
 }

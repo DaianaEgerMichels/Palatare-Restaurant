@@ -1,0 +1,28 @@
+div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 5px;
+    margin-right: 8px;
+}
+
+button{
+    border: none;
+    background-color: black;
+    background: none;
+    color: white;
+    width: 100px;
+    height: 50px;
+    padding: 0;
+    margin-right: 8px;
+    margin-top: 10px;
+    font-family: 'Caviar Dreams','Times New Roman', Times, serif;
+}
+
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('CaviarDreams.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

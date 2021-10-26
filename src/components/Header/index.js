@@ -1,11 +1,12 @@
 import React from "react";
 import "./style.css";
 import PropTypes from 'prop-types';
+import Navegation from "../Navegation";
 
 class Header extends React.Component{
     render(){
         return(
-            <div className="header-geral">
+            <header>
                 <div className="header">
                 <img src={this.props.src} alt={this.props.alt}/>
                 <h2>{this.props.name}</h2>
@@ -13,7 +14,8 @@ class Header extends React.Component{
                 <div className="title">
                     <h1>{this.props.title}</h1>
                 </div>
-            </div>
+                <Navegation init={"Start"} name={"Revenues"}></Navegation>
+            </header>
         )
     }
 }
