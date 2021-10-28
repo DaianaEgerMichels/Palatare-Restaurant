@@ -15,14 +15,17 @@
     border-radius: 20px;
     font-family: 'Caviar Italic','Times New Roman', Times, serif;
     font-size: 16px;
-    background: rgb(209, 209, 209);
+    background: rgba(209, 209, 209,0.5);
     text-align: center;
+}
+
+button:hover{
+    background-color: rgb(150, 150, 150);
 }
 
 ::placeholder {
     color: rgb(20, 20, 20);
     font-size: 16px;
-    
 }
 
 label {
