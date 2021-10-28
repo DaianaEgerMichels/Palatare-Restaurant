@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+    font:inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+.search {
+    border-radius: 1px solid rgb(82, 80, 80);
+    width: 400px;
+    height: 35px;
+    border-radius: 20px;
+    font-family: 'Caviar Italic','Times New Roman', Times, serif;
+    font-size: 16px;
+    background: rgb(209, 209, 209);
+    text-align: center;
+}
+
+::placeholder {
+    color: rgb(20, 20, 20);
+    font-size: 16px;
+    
+}
+
+label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Caviar Bold','Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: 'Caviar Bold';
+    src: url('../Header/CaviarDreams_Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Caviar Italic';
+    src: url('../Header/CaviarDreams_Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

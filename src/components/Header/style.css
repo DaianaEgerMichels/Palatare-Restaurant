@@ -58,6 +58,8 @@ h2{
     font-weight: normal;
     font-style: normal;
 }
+
+
 @font-face {
     font-family: 'Magista Brush';
     src: url('Magista\ Brush.ttf') format('truetype');

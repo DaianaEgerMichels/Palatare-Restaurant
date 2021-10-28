@@ -14,7 +14,7 @@ class Header extends React.Component{
                 <div className="title">
                     <h1>{this.props.title}</h1>
                 </div>
-                <Navegation init={"Start"} name={"Revenues"}></Navegation>
+                <Navegation init={"Home"} name={"Revenues"}></Navegation>
             </header>
         )
     }

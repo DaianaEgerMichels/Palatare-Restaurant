@@ -8,8 +8,8 @@ class Home extends React.Component{
     render(){
         return(
             <>
-            <div className="home">
-                <Header src={logo} alt={"chefe"} name={"Palatare Restaurant"} title={"Welcome to the Palatare Restaurant home page!"}></Header>
+            <div className="page-two">
+                <Header src={logo} alt={"chefe"} name={"Palatare Restaurant"} title={"Welcome to the Palatare Restaurant revenues page!"}></Header>
                 <Main></Main>
             </div>
             </>

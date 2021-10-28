@@ -5,7 +5,7 @@ import "./style.css"
 class Navegation extends React.Component{
     render(){
         return(
-            <div>
+            <div className="botoes">
             <button className="init">{this.props.init}</button>
             <button className="revenues">{this.props.name}</button>
             </div>
