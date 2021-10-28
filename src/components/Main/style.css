@@ -3,6 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background: whitesmoke;
-    height: 400px;
+    background: rgb(233, 232, 232);
+    height: 700px;
+    width: 100%;
+
 }
