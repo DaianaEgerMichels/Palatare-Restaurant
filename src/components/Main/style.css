@@ -2,9 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
-    background: rgb(233, 232, 232);
-    height: 700px;
-    width: 100%;
-
+    justify-content: space-evenly;
+    flex-shrink: 2;
+    background-color: rgb(233, 232, 232);
+    min-height: 900px;
 }

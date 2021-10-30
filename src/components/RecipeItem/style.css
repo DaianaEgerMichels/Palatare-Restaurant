@@ -1,0 +1,66 @@
+.recipe{
+    border: 1px solid gray;
+    width: 230px;
+    height: 370px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-shrink: 2;
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.image{
+    border-radius: 5px ;
+    border: 1px solid black;
+    width: 180px;
+    height: 190px;
+}
+
+.name-recipe{
+    font-family: 'Caviar Dreams';
+    font-family:'Rosellinda', 'Times New Roman', Times, serif;
+    font-size: 42px;
+    color: rgb(160, 133, 60);
+    text-align: center;
+}
+
+.description-recipe, .see-recipe{
+    font-family: 'Caviar Dreams';
+}
+
+.description-recipe{
+    color: #000;
+    font-size: 16px;
+}
+
+.see-recipe{
+    border: none;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    width: 180px;
+    height: 30px;
+    padding: 0;
+    margin: 8px;
+}
+
+
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('../Header/CaviarDreams.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rosellinda';
+    src: url('../Header/Rosellinda\ Alyamore.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+

@@ -19,9 +19,11 @@
     text-align: center;
 }
 
-button:hover{
-    background-color: rgb(150, 150, 150);
+.loupe{
+    width: 30px;
+    height: 30px;
 }
+
 
 ::placeholder {
     color: rgb(20, 20, 20);
@@ -35,7 +37,8 @@ label {
     justify-content: center;
     gap: 10px;
     font-family: 'Caviar Bold','Times New Roman', Times, serif;
-    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 15px;
 }
 
 @font-face {

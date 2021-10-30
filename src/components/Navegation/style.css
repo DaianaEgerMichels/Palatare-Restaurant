@@ -6,7 +6,7 @@
     gap: 10px;
 }
 
-button{
+.init, .recipes{
     border: none;
     background-color: black;
     background: none;
@@ -17,6 +17,10 @@ button{
     margin-right: 8px;
     margin-top: 8px;
     font-family: 'Caviar Dreams','Times New Roman', Times, serif;
+}
+
+button:hover{
+    background-color: rgb(150, 150, 150);
 }
 
 @font-face {

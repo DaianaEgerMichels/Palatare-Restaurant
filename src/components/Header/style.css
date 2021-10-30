@@ -15,6 +15,7 @@ header{
     flex-shrink: 2;
     background-color: black;
     width: 100%;
+    min-height: 150px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
@@ -28,7 +29,7 @@ header{
     word-wrap: break-word;
 }
 
-img{
+.img{
     border-radius: 40%;
     border: 1px dashed rgb(43, 43, 43);
     margin-top: 10px;
@@ -38,7 +39,7 @@ img{
     height: 80px;
 }
 
-h2{
+.palatare-logo{
     font-family: 'Magista Brush', 'Times New Roman', Times, serif;
     font-size: 16px;
     color: white;
@@ -46,13 +47,24 @@ h2{
     margin-top: 28px;
 }
 
-.title{
+.title-conteiner{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.title, .sub-title{
     text-align: center;
     font-family: 'Rosellinda', 'Times New Roman', Times, serif;
     color: rgb(160, 133, 60);
-    font-size: 42px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    
+}
+
+.title{
+    font-size: 50px;
+}
+
+.sub-title{
+    font-size: 35px;
 }
 
 

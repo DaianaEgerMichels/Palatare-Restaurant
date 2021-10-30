@@ -2,20 +2,20 @@ import React from "react";
 import PropTypes from 'prop-types';
 import "./style.css"
 
-class Navegation extends React.Component{
+class NavegationPages extends React.Component{
     render(){
         return(
             <div className="botoes">
             <button className="init">{this.props.init}</button>
-            <button className="revenues">{this.props.name}</button>
+            <button className="recipes">{this.props.name}</button>
             </div>
         )
     }
 }
 
-Navegation.propTypes={
-    init: PropTypes.string,
-    name: PropTypes.string,
+NavegationPages.propTypes={
+    init: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
 }
 
-export default Navegation;
+export default NavegationPages;

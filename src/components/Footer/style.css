@@ -7,7 +7,7 @@
     width: 100%;
 }
 
-.footer{
+footer{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -24,11 +24,12 @@ p{
     font-family: 'Caviar Dreams','Times New Roman', Times, serif;
     color: white;
     text-align: center;
+    font-size: 12px;
 }
 
 h3{
     font-family:'Rosellinda', 'Times New Roman', Times, serif;
-    font-size: 40px;
+    font-size: 30px;
     color: rgb(160, 133, 60);
     text-align: center;
 }
