@@ -6,8 +6,8 @@ class NavegationPages extends React.Component{
     render(){
         return(
             <div className="botoes">
-            <button className="init">{this.props.init}</button>
-            <button className="recipes">{this.props.name}</button>
+            <button className="init" onClick={this.props.handleHome}>{this.props.init}</button>
+            <button className="recipes" onClick={this.props.handleRecipes}>{this.props.name}</button>
             </div>
         )
     }
@@ -16,6 +16,9 @@ class NavegationPages extends React.Component{
 NavegationPages.propTypes={
     init: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
+    handleHome: PropTypes.func.isRequired,
+    handleRecipes: PropTypes.func.isRequired,
+
 }
 
 export default NavegationPages;

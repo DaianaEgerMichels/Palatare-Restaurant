@@ -7,10 +7,10 @@ class RecipeItem extends Component{
         return(
             <li>
                 <section className="recipe">
-                <img className="image" src={this.props.photo} alt={this.props.alt}></img>
+                <img className="image" src={this.props.src} alt={this.props.alt}></img>
                 <h1 className="name-recipe">{this.props.title}</h1>
                 <p className="description-recipe">{this.props.subTitle}</p>
-                <button className="see-recipe">See the Recipe</button>
+                <button className="see-recipe" onClick={this.props.handleSeeRecipe}>See the Recipe</button>
                 </section>
             </li>
         )
@@ -18,10 +18,11 @@ class RecipeItem extends Component{
 }
 
 RecipeItem.propTypes = {
-    photo: PropTypes.string.isRequired,
+    src: PropTypes.string.isRequired,
     alt: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     subTitle: PropTypes.string.isRequired,
+    handleSeeRecipe: PropTypes.func.isRequired,
 }
 
 export default RecipeItem;

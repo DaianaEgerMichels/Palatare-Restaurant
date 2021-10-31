@@ -1,31 +1,32 @@
 import React from "react";
 import Header from "../../components/Header";
-import "./style.css";
-import logo from "../../components/Header/chefe.jpg"
-import Main from "../../components/Main";
+import logo from "../../components/Header/chefe.jpg";
 import Footer from "../../components/Footer";
+import Main from "../../components/Main";
 import RecipesList from "../../components/RecipesList";
+import legume from "../../assets/IMAGENS/recipeLegumes.jpg"
 import RecipeItem from "../../components/RecipeItem";
-import Search from "../../components/Search";
-import legume from "./recipeLegumes.jpg"
 
-
-class Home extends React.Component{
+class PageRecipes extends React.Component{
     render(){
         return(
-            
-            <section className="home">
-                <Header src={logo} alt={"chefe"} name={"Palatare Restaurant"} title={"Welcome to the Palatare Restaurant"} subTitle={"Save and gain health!"}></Header>
+        
+            <section className="page-recipes">
+                <Header src={logo} alt={"chefe"} name={"Palatare Restaurant"} title={"Palatare Restaurant"} subTitle={"Save and gain health!"}></Header>
                 <Main>
-                <Search type={"text"} placeholder={"Type here what you are looking for..."}></Search>
-                <RecipesList>
+                    <RecipesList>
                     <RecipeItem src={legume} alt={"Legume"} title={"Salada de frutas"} subTitle={"Um mix de sabores"}></RecipeItem>
                     <RecipeItem src={legume} alt={"Legume"} title={"Salada de frutas"} subTitle={"Um mix de sabores"}></RecipeItem>
                     <RecipeItem src={legume} alt={"Legume"} title={"Salada de frutas"} subTitle={"Um mix de sabores"}></RecipeItem>
                     <RecipeItem src={legume} alt={"Legume"} title={"Salada de frutas"} subTitle={"Um mix de sabores"}></RecipeItem>
                     <RecipeItem src={legume} alt={"Legume"} title={"Salada de frutas"} subTitle={"Um mix de sabores"}></RecipeItem>
                     <RecipeItem src={legume} alt={"Legume"} title={"Salada de frutas"} subTitle={"Um mix de sabores"}></RecipeItem>
-                </RecipesList>
+                    <RecipeItem src={legume} alt={"Legume"} title={"Salada de frutas"} subTitle={"Um mix de sabores"}></RecipeItem>
+                    <RecipeItem src={legume} alt={"Legume"} title={"Salada de frutas"} subTitle={"Um mix de sabores"}></RecipeItem>
+                    <RecipeItem src={legume} alt={"Legume"} title={"Salada de frutas"} subTitle={"Um mix de sabores"}></RecipeItem>
+                    <RecipeItem src={legume} alt={"Legume"} title={"Salada de frutas"} subTitle={"Um mix de sabores"}></RecipeItem>
+                    <RecipeItem src={legume} alt={"Legume"} title={"Salada de frutas"} subTitle={"Um mix de sabores"}></RecipeItem>
+                    </RecipesList>
                 </Main>
                 <Footer>
                     <h3>Contato</h3>
@@ -37,4 +38,4 @@ class Home extends React.Component{
     }
 }
 
-export default Home;
+export default PageRecipes;

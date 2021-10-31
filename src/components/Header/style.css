@@ -11,22 +11,37 @@ header{
     display: flex;
     align-items: center;
     flex-direction: row;
-    justify-content: space-around;
     flex-shrink: 2;
     background-color: black;
     width: 100%;
-    min-height: 150px;
+    height: 120px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
 
 
-.header{
+header> .title-conteiner{
     display: flex;
-    align-items: flex-start;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    gap: 10px;
-    word-wrap: break-word;
+    text-align: center;
+    margin-left: 30px;
+    min-width: 600px;
+}
+
+@media(max-width:600px){
+    header{
+        display: flex;
+        overflow: scroll;
+    }
+}
+
+header> .botoes{
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 10px;
 }
 
 .img{
@@ -47,16 +62,16 @@ header{
     margin-top: 28px;
 }
 
-.title-conteiner{
-    margin-top: 5px;
-    margin-bottom: 5px;
+.header-logo{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .title, .sub-title{
-    text-align: center;
     font-family: 'Rosellinda', 'Times New Roman', Times, serif;
-    color: rgb(160, 133, 60);
-    
+    color: rgb(160, 133, 60); 
 }
 
 .title{
