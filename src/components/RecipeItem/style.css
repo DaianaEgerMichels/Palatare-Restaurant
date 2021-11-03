@@ -1,7 +1,7 @@
 .recipe{
     border: 1px solid gray;
-    width: 230px;
-    height: 370px;
+    width: 250px;
+    height: 400px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -22,18 +22,19 @@
 .name-recipe{
     font-family: 'Caviar Dreams';
     font-family:'Rosellinda', 'Times New Roman', Times, serif;
-    font-size: 42px;
+    font-size: 35px;
     color: rgb(160, 133, 60);
     text-align: center;
 }
 
 .description-recipe, .see-recipe{
     font-family: 'Caviar Dreams';
+    font-size: 14px;
 }
 
 .description-recipe{
     color: #000;
-    font-size: 16px;
+    
 }
 
 .see-recipe{

@@ -37,7 +37,7 @@ const RECIPE = [
         "id": 3,
         "src": "https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80",
         "alt": "Cream Pumpkin",
-        "title": "Cream With Pumpkin Seeds",
+        "title": "Cream Pumpkin Seeds",
         "subTitle": "A delicious cream",
         "author": "Kethy Schütz",
         "time": "45 minutes",

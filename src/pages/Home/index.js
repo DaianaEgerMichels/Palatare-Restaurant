@@ -7,7 +7,7 @@ import Footer from "../../components/Footer";
 import RecipesList from "../../components/RecipesList";
 import RecipeItem from "../../components/RecipeItem";
 import Search from "../../components/Search";
-import legume from "./recipeLegumes.jpg"
+
 import PageRecipes from "../PageRecipes";
 import RECIPE from "../../assets/RECIPES";
 
@@ -20,33 +20,18 @@ class Home extends React.Component{
         this.state = {
             isLoading: true,
             recipeItem: [],
-    
         }
 
     }
-    RECIPE
-    async componentDidMount(){
+
+    componentDidMount(){
         console.log("Passei aqui");
-
-        const response = await fetch("../../assets/RECIPES");
-        const data = await response.json();
-        const recipeItem = data.RECIPE.map((recipe)=>{
-            return {
-                src: recipe.src ,
-                alt: recipe.alt ,
-                title: recipe.title ,
-                subTitle: recipe.subTitle ,
+                this.setState({
+                    isLoading: false,
+                    recipeItem: RECIPE,
+                })
             }
-        });
-
-
-        this.setState({
-                isLoading: false,
-                recipeItem,
-        });
-    }
-
-
+    
     render(){
         return(
             
@@ -71,24 +56,13 @@ class Home extends React.Component{
                     {!this.state.isLoading && (
 
                     <RecipesList>
-                        {this.state.recipeItem.map(({src, alt, title, subTitle})=>{<RecipeItem /*o que está dentro das chaves é descontrução*/ 
+                       {this.state.recipeItem.slice(0,6).map(({src, alt, title, subTitle})=>{return <RecipeItem  
                         src={src} 
                         alt={alt} 
                         title={title} 
                         subTitle={subTitle}
                         onClick={(recipe)=>{
                             <PageRecipes {...recipe}/>}}/>})}
-                        {/*<RecipeItem 
-                            src={legume} 
-                            alt={"Legume"} 
-                            title={"Salada de frutas"} 
-                            subTitle={"Um mix de sabores"}>
-                        </RecipeItem>
-                        <RecipeItem src={"https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=387&q=80"} alt={"Legume"} title={"Salada de frutas"} subTitle={"Um mix de sabores"}></RecipeItem>
-                        <RecipeItem src={legume} alt={"Legume"} title={"Salada de frutas"} subTitle={"Um mix de sabores"}></RecipeItem>
-                        <RecipeItem src={legume} alt={"Legume"} title={"Salada de frutas"} subTitle={"Um mix de sabores"}></RecipeItem>
-                        <RecipeItem src={legume} alt={"Legume"} title={"Salada de frutas"} subTitle={"Um mix de sabores"}></RecipeItem>
-                        <RecipeItem src={legume} alt={"Legume"} title={"Salada de frutas"} subTitle={"Um mix de sabores"}></RecipeItem>*/}
                 </RecipesList>)}
                 </Main>
                 <Footer>
