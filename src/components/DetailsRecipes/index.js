@@ -8,7 +8,7 @@ class DetailsRecipes extends Component{
         return(
             <section className="container">
                 <div className="grid-image">
-                    <img src={this.props.photo} alt={this.props.alt}></img>
+                    <img src={this.props.src} alt={this.props.alt}></img>
                     <h1>{this.props.title}</h1>
                     <h2>{this.props.subTitle}</h2>
                 </div>
@@ -17,15 +17,14 @@ class DetailsRecipes extends Component{
 
                 <section className="grid-details">
 
-                    <h3>{this.props.name}</h3>
+                    <h3>{this.props.author}</h3>
                     
                     <div>
                         <p>{this.props.time}</p>
                         <p>{this.props.portions}</p>
                     </div>
                     <div>
-                        <button>Curtir</button>
-                        <button>Compartilhar</button>
+                        <button onClick={this.props.handleColor}>Like</button>
                     </div>
                 </section>
 
@@ -42,11 +41,14 @@ class DetailsRecipes extends Component{
 }
 
 DetailsRecipes.propTypes = {
+    src: PropTypes.string.isRequired,
+    alt: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     subTitle: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
+    author: PropTypes.string.isRequired,
     time: PropTypes.string.isRequired,
     portions: PropTypes.string.isRequired,
+    handleColor: PropTypes.func,
 
 }
 

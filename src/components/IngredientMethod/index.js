@@ -22,7 +22,7 @@ class IngredientMethod extends Component{
 }
 
 IngredientMethod.propTypes = {
-    ingredient: PropTypes.array.isRequired,
+    ingredient: PropTypes.array,
     preparation: PropTypes.string.isRequired,
 }
 

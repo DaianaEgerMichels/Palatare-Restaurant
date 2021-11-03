@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import NavegationPages from "../Navegation";
 
 class Header extends React.Component{
+
+
     render(){
         return(
             <header>
@@ -15,7 +17,7 @@ class Header extends React.Component{
                     <h1 className="title">{this.props.title}</h1>
                     <h3 className="sub-title">{this.props.subTitle}</h3>
                 </div>
-                <NavegationPages init={"Home"} name={"Recipes"}></NavegationPages>
+                <NavegationPages init={"Home"} name={"Recipes"} event={this.props.event}></NavegationPages>
             </header>
         )
     }
@@ -27,6 +29,8 @@ Header.propTypes = {
     name: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     subTitle: PropTypes.string.isRequired,
+    event: PropTypes.func,
+    
 }
 
 export default Header;

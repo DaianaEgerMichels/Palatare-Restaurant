@@ -14,7 +14,7 @@ class PageTwo extends React.Component{
             <section className="page-two">
                 <Header src={logo} alt={"chefe"} name={"Palatare Restaurant"} title={"Palatare Restaurant"} subTitle={"Save and gain health!"}></Header>
                 <Main>
-                    <DetailsRecipes photo={Peel} alt={"Peel"} title={"Toast with Vegetable Peel"} subTitle={"Recipe based on the reuse of vegetable peels"} name={"Author: Kiara Müstchier"} time={"Preparation time: 15 min."} portions={"Makes 5 servings"}></DetailsRecipes>
+                    <DetailsRecipes photo={Peel} alt={"Peel"} title={"Toast with Vegetable Peel"} subTitle={"Recipe based on the reuse of vegetable peels"} author={"Author: Kiara Müstchier"} time={"Preparation time: 15 min."} portions={"Makes 5 servings"}></DetailsRecipes>
                 </Main>
                 <Footer>
                     <h3>Contato</h3>
