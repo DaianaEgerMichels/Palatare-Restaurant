@@ -5,8 +5,29 @@ import Footer from "../../components/Footer";
 import Main from "../../components/Main";
 import RecipesList from "../../components/RecipesList";
 import RecipeItem from "../../components/RecipeItem";
+import RECIPE from "../../assets/RECIPES";
+import PageTwo from "../PageTwo";
 
 class PageRecipes extends React.Component{
+
+    constructor(props){
+        super(props);
+
+        this.state = {
+            isLoading: true,
+            recipeItem: [],
+        }
+
+    }
+
+    componentDidMount(){
+        console.log("Passei aqui");
+                this.setState({
+                    isLoading: false,
+                    recipeItem: RECIPE,
+                })
+    }
+
     render(){
         return(
         
@@ -21,12 +42,13 @@ class PageRecipes extends React.Component{
                 </Header>
                 <Main>
                     <RecipesList>
-                        <RecipeItem 
-                            src={""} 
-                            alt={"Legume"} 
-                            title={"Salada de frutas"} 
-                            subTitle={"Um mix de sabores"}>
-                        </RecipeItem>
+                    {this.state.recipeItem.map(({src, alt, title, subTitle})=>{return <RecipeItem  
+                        src={src} 
+                        alt={alt} 
+                        title={title} 
+                        subTitle={subTitle}
+                        onClick={(recipe)=>{
+                            <PageTwo {...recipe}/>}}/>})}
                     </RecipesList>
                 </Main>
                 <Footer>

@@ -5,16 +5,47 @@ import logo from "../../components/Header/chefe.jpg";
 import Footer from "../../components/Footer";
 import Main from "../../components/Main";
 import DetailsRecipes from "../../components/DetailsRecipes";
-import Peel from "../Home/recipeLegumes.jpg"
+import RECIPE from "../../assets/RECIPES";
 
 class PageTwo extends React.Component{
+
+    constructor(props){
+        super(props);
+
+        this.state = {
+            isLoading: true,
+            recipeItem: [],
+        }
+
+    }
+
+    componentDidMount(){
+        console.log("Passei aqui");
+                this.setState({
+                    isLoading: false,
+                    recipeItem: RECIPE,
+                })
+    }
+
     render(){
         return(
         
             <section className="page-two">
                 <Header src={logo} alt={"chefe"} name={"Palatare Restaurant"} title={"Palatare Restaurant"} subTitle={"Save and gain health!"}></Header>
+        
                 <Main>
-                    <DetailsRecipes photo={Peel} alt={"Peel"} title={"Toast with Vegetable Peel"} subTitle={"Recipe based on the reuse of vegetable peels"} author={"Author: Kiara Müstchier"} time={"Preparation time: 15 min."} portions={"Makes 5 servings"}></DetailsRecipes>
+                
+                {this.state.isLoading && "Loading..."}
+                {!this.state.isLoading && (
+                       this.state.recipeItem.map(({src, alt, title, subTitle, author, time, portions})=>{return <DetailsRecipes 
+                        src={src} 
+                        alt={alt} 
+                        title={title} 
+                        subTitle={subTitle}
+                        author={author} 
+                        time={time} 
+                        portions={portions}
+                        />}))}
                 </Main>
                 <Footer>
                     <h3>Contato</h3>

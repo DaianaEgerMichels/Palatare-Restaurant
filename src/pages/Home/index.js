@@ -7,8 +7,7 @@ import Footer from "../../components/Footer";
 import RecipesList from "../../components/RecipesList";
 import RecipeItem from "../../components/RecipeItem";
 import Search from "../../components/Search";
-
-import PageRecipes from "../PageRecipes";
+import PageTwo from "../PageTwo";
 import RECIPE from "../../assets/RECIPES";
 
 
@@ -30,7 +29,7 @@ class Home extends React.Component{
                     isLoading: false,
                     recipeItem: RECIPE,
                 })
-            }
+    }
     
     render(){
         return(
@@ -62,8 +61,8 @@ class Home extends React.Component{
                         title={title} 
                         subTitle={subTitle}
                         onClick={(recipe)=>{
-                            <PageRecipes {...recipe}/>}}/>})}
-                </RecipesList>)}
+                            <PageTwo {...recipe}/>}}/>})}
+                    </RecipesList>)}
                 </Main>
                 <Footer>
                     <h3>Contato</h3>
