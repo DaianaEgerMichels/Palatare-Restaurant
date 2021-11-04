@@ -5,7 +5,8 @@ class Footer extends React.Component{
     render(){
         return(
                 <footer className="footer">
-                    {this.props.children}
+                    <h3>Contato</h3>
+                    <p>palatare@palatare.com</p>
                 </footer>
         )
     }

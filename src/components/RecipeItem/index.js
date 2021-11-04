@@ -1,6 +1,7 @@
 import { Component } from "react";
 import PropTypes  from "prop-types";
-import "./style.css"
+import "./recipeItem.css"
+import "../../mock"
 
 class RecipeItem extends Component{
 

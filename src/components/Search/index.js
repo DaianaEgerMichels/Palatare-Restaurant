@@ -1,5 +1,5 @@
 import React from "react";
-import './style.css';
+import './search.css';
 import PropTypes from 'prop-types';
 
 class Search extends React.Component{
@@ -12,7 +12,7 @@ class Search extends React.Component{
                     onChange={this.props.onChange} 
                     className="search">
                 </input>
-                <img className={"loupe"} 
+                <img className="loupe" 
                 src={"https://icons.iconarchive.com/icons/icojam/blue-bits/128/search-icon.png"} 
                 alt={"loupe"}/>
             </label>

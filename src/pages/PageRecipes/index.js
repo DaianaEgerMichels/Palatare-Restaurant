@@ -51,10 +51,7 @@ class PageRecipes extends React.Component{
                             <PageTwo {...recipe}/>}}/>})}
                     </RecipesList>
                 </Main>
-                <Footer>
-                    <h3>Contato</h3>
-                    <p>palatare@palatare.com</p>
-                </Footer>
+                <Footer></Footer>
             </section>
             
         )

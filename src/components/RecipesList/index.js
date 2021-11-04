@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css"
+import "../../mock"
 
 class RecipesList extends React.Component{
     render(){

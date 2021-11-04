@@ -7,10 +7,10 @@ class NavegationPages extends React.Component{
 
     render(){
         return(
-            <div className="botoes">
+            <nav className="botoes">
             <button className="init" onClick={this.props.handleHome}>{this.props.init}</button>
             <button className="recipes" onClick={this.props.handleRecipes}>{this.props.name}</button>
-            </div>
+            </nav>
         )
     }
 }

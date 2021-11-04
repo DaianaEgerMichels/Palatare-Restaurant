@@ -4,14 +4,14 @@ import PropTypes from "prop-types";
 class IngredientMethod extends Component{
     render(){
         return(
-            <section>
-                    <div>
+            <section className="recipe-description">
+                    <div className="ingredients">
                         <h3>Ingredients</h3>
                         <ul>
                             <li>{this.props.ingredient}</li>
                         </ul>
                     </div>
-                    <div>
+                    <div className="method">
                         <h3>Method of Preparation</h3>
                         <p>{this.props.preparation}</p>
                     </div>

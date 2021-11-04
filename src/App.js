@@ -7,9 +7,9 @@ import PageTwo from './pages/PageTwo';
 class App extends React.Component {
   render(){return (
     <div className="App">
-      {/*<Home></Home>*/}
-      <PageTwo></PageTwo>
-      {/*<PageRecipes></PageRecipes>*/}
+      <Home></Home>
+      {/*<PageTwo></PageTwo>
+      <PageRecipes></PageRecipes>*/}
     </div>
   );}
 }

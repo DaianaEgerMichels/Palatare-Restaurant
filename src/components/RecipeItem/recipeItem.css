@@ -1,6 +1,6 @@
 .recipe{
     border: 1px solid gray;
-    width: 250px;
+    width: 270px;
     height: 400px;
     display: flex;
     align-items: center;
@@ -30,6 +30,7 @@
 .description-recipe, .see-recipe{
     font-family: 'Caviar Dreams';
     font-size: 14px;
+    text-align: center;
 }
 
 .description-recipe{

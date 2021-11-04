@@ -141,29 +141,64 @@ const RECIPE = [
 
     {
         "id": 8,
-        "src": "https://cdn.pixabay.com/photo/2021/04/13/08/48/yellow-6175064_960_720.jpg",
-        "alt": "Banana Peel",
-        "title": "Banana Peel Steak",
+        "src": "https://images.pexels.com/photos/1765012/pexels-photo-1765012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Rice Balls",
+        "title": "Rice Balls",
         "subTitle": "A practical and tasty recipe ",
         "author": "Fatima Santiago",
-        "time": "20 minutes",
-        "portions": "3 portions",
-        "ingredients": ["6 ripe banana peels",
-        "1 cup of breadcrumbs",
-        "2 eggs",
-        "3 cloves of garlic",
-        "1 cup of wheat flour",
+        "time": "50 minutes",
+        "portions": "20 portions",
+        "ingredients": ["2 cups of boiled rice tea",
+        "Half cup of milk tea",
+        "1 cup of wheat flour tea",
+        "3 eggs",
+        "1 tablespoon Worcestershire sauce, optional",
+        "2 tablespoons of grated parmesan cheese",
+        "Half a cup of chopped green onion tea",
+        "Half a cup of chopped parsley tea",
+        "1 teaspoon of baking powder",
         "salt to taste",],
-        "preparation": `Wash the banana peels under running water and cut off the ends. 
-        Remove the skins in the form of steaks, without breaking them.
-        Mash and garlic and place in a bowl with the salt, 
-        put the skins in this mixture. Beat eggs like an omelet. 
-        Spread the banana peels in the wheat flour, in the beaten eggs and,
-        finally, in the breadcrumbs. Fry the skins in very hot oil. 
-        Let it brown on both sides and serve it hot.`,
+        "preparation": `In a deep dish mix the cooked rice, milk, beaten eggs, 
+        Worcestershire sauce, Parmesan cheese, parsley, chives and pepper and salt.
+        Add the flour little by little until the mixture gives consistency. If necessary, use more flour.
+         The dough must not become hard.
+        Place the dough in the refrigerator, covered, for about 30 minutes. 
+        Remove the dough and mix in the yeast.
+        Heat the oil in a deep skillet. To find the exact temperature point of the oil, 
+        test it with a matchstick. When lighting the oil will be at the ideal temperature.
+        Lower the heat a little and add small spoonfuls of dough to fry. Let it fry on one 
+        side and then turn it over to brown on the other.
+        Take care that the stove flame does not overheat the oil. Drain the cupcakes onto 
+        a paper towel-lined dam. Serve immediately.
+        You can use leftover rice and even risotto, which is delicious. 
+        Just be careful with salt and pepper as the risotto is already seasoned.`,
     },
+
+    
+    {"id": 9,
+    "src": "https://images.pexels.com/photos/3547176/pexels-photo-3547176.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "alt": "Bread Pudding",
+    "title": "Bread Pudding",
+    "subTitle": "A devine dessert ",
+    "author": "Louisa Schütz",
+    "time": "30 minutes",
+    "portions": "6 portions",
+    "ingredients": ["3 stale buns",
+    "500 ml of milk",
+    "3 whole eggs",
+    "2 cups (tea) of sugar",
+    "lemon zest to taste",
+    "1 cup of fresh grated coconut",],
+    "preparation": `
+    362 / 5000
+    Resultados de tradução
+    Cut the buns into rounds approximately 2 cm thick each. 
+    Distribute the bread slices at the bottom of the refractory. 
+    In a blender, beat milk, eggs and sugar. Add the lemon zest and coconut. 
+    Pour mixture over bread. Bake in a bain-marie in the oven, preheated, for 30 minutes. 
+    Wait until it gets warm and refrigerate to serve cold. `,
+},
 
 ]
 
-
-export default RECIPE;
+export default RECIPE

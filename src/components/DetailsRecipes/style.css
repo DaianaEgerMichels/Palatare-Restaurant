@@ -1,0 +1,161 @@
+
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:20px;
+}
+
+.grid-image{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+img{
+    max-width: 700px;
+    max-height: 700px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.grid-details{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap:10px;
+}
+
+.grid-details> h3, p, button{
+    font-family: 'Caviar Dreams', 'Times New Roman', Times, serif;
+    font-size: 15px;
+    color: black;
+}
+
+.grid-image> h1 {
+    font-family: 'Rosellinda', 'Times New Roman', Times, serif;
+    font-size: 50px;
+}
+
+.grid-image> h2 {
+    font-family: 'Caviar Dreams', 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.like{
+    display: flex;
+    justify-content: center;
+}
+
+.like> button{
+    width:110px;
+    height: 30px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 3px;
+}
+
+
+button:hover{
+    background-color: rgb(150, 150, 150);
+}
+
+
+/*ingredients and methods*/
+
+.recipe-description{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:45px;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+.ingredients> h3, .method>h3{
+    color: black;
+    font-size: 42px;
+    margin-bottom: 10px;
+    font-family: 'Rosellinda','Times New Roman', Times, serif;
+    text-align: center;
+}
+
+.recipe-description> .ingredients:nth-child(1){
+    color: black;
+    font-family: 'Caviar Dreams','Times New Roman', Times, serif;
+    font-size: 17px;
+    text-align: center;
+}
+
+.method>p{
+    color: black;
+    font-family: 'Caviar Dreams','Times New Roman', Times, serif;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.table-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.table{
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: auto;
+    color: black;
+    font-family: 'Caviar Dreams','Times New Roman', Times, serif;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
+
+.calories{
+    text-align: center;
+}
+
+thead{
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Caviar Dreams','Times New Roman', Times, serif;
+    background-color: black;
+    color: rgb(241, 241, 241);
+}
+
+tbody{
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Caviar Dreams','Times New Roman', Times, serif;
+    background-color: white;
+    text-align: justify;
+}
+
+
+
+@font-face {
+    font-family: 'Caviar Dreams';
+    src: url('../Header/CaviarDreams.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Rosellinda';
+    src: url('../Header/Rosellinda\ Alyamore.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}

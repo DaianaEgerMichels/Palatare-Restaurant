@@ -8,7 +8,7 @@ import RecipesList from "../../components/RecipesList";
 import RecipeItem from "../../components/RecipeItem";
 import Search from "../../components/Search";
 import PageTwo from "../PageTwo";
-import RECIPE from "../../assets/RECIPES";
+import "../../mock"
 
 
 class Home extends React.Component{
@@ -23,11 +23,16 @@ class Home extends React.Component{
 
     }
 
-    componentDidMount(){
-        console.log("Passei aqui");
+    async componentDidMount(){
+        console.log("ComponentDidMount");
+
+        const response = await fetch("/api/recipe");
+        const recipeItem = await response.json();
+
+
                 this.setState({
                     isLoading: false,
-                    recipeItem: RECIPE,
+                    recipeItem,
                 })
     }
     
@@ -60,14 +65,10 @@ class Home extends React.Component{
                         alt={alt} 
                         title={title} 
                         subTitle={subTitle}
-                        onClick={(recipe)=>{
-                            <PageTwo {...recipe}/>}}/>})}
+                       />})}
                     </RecipesList>)}
                 </Main>
-                <Footer>
-                    <h3>Contato</h3>
-                    <p>palatare@palatare.com</p>
-                </Footer>
+                <Footer></Footer>
             </section>
             
         )

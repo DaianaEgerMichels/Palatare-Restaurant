@@ -47,10 +47,7 @@ class PageTwo extends React.Component{
                         portions={portions}
                         />}))}
                 </Main>
-                <Footer>
-                    <h3>Contato</h3>
-                    <p>palatare@palatare.com</p>
-                </Footer>
+                <Footer></Footer>
             </section>
             
         )

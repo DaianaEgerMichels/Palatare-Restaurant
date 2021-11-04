@@ -11,10 +11,3 @@
 ul> li{
     list-style: none;
 }
-
-@media(max-width:600px){
-    .recipes-list{
-        grid-template-columns: repeat(2, 1fr);
-        margin-bottom: 20px;
-    }
-}

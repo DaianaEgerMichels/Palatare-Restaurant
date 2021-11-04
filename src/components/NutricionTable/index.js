@@ -4,16 +4,16 @@ import PropTypes from "prop-types";
 class NutricionTable extends Component{
     render(){
         return(
-            <section>
+            <section className="table">
                     <table>
                         <thead>
                             <tr>
-                                <th>{this.props.fruit}</th>
+                                <th colSpan={2}>{this.props.fruit}</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>
+                                <td colSpan={2} className="calories">
                                     {this.props.calories}
                                 </td>
                             </tr>
