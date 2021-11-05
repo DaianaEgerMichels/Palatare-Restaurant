@@ -17,9 +17,10 @@ class Home extends React.Component{
         this.state = {
             isLoading: true,
             recipeItem: [],
-        }
+        };
 
-    }
+        this.listSearch = [];        
+    };
 
     async componentDidMount(){
         console.log("ComponentDidMount");
@@ -27,12 +28,15 @@ class Home extends React.Component{
         const response = await fetch("/api/recipe");
         const recipeItem = await response.json();
 
+        this.listSearch = recipeItem;
 
                 this.setState({
                     isLoading: false,
                     recipeItem,
                 })
-    }
+
+    };
+
     
     render(){
         return(
@@ -51,7 +55,12 @@ class Home extends React.Component{
                         placeholder={"Type here what you are looking for..."}
                         onChange={(event)=>{
                             const text = event.target.value;
-                            console.log(text);}}>
+                            console.log(text);
+                            
+                            const resultFilter = this.listSearch.filter((recipe)=>{
+                                return recipe.title.includes(text);
+                            })
+                            }}>
                     </Search>
 
                     {this.state.isLoading && "Loading..."}
@@ -70,7 +79,7 @@ class Home extends React.Component{
             </section>
             //</Link>
         )
-    }
+    };
 }
 
 export default Home;

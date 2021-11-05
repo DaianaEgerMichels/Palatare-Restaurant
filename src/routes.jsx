@@ -8,14 +8,16 @@ const Router = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/pageTwo" component={PageTwo} />
+
         <Route exact path="/" component={Home} />
 
         <Route path="/pageRecipes" children={(props) => <PageRecipes {...props} />} />
 
         {/*<Route exact path="/" render={(props) => <Home {...props} />} />*/}
-        <Route path="/path">
+
+        {/*<Route path="/path">
           <input placeholder="Say Hello!"></input>
-        </Route>
+        </Route>*/}
       </Routes>
     </BrowserRouter>
   );

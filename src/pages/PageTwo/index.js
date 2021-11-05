@@ -5,7 +5,6 @@ import logo from "../../components/Header/chefe.jpg";
 import Footer from "../../components/Footer";
 import Main from "../../components/Main";
 import DetailsRecipes from "../../components/DetailsRecipes";
-import RECIPE from "../../assets/RECIPES";
 
 class PageTwo extends React.Component{
 
@@ -19,19 +18,30 @@ class PageTwo extends React.Component{
 
     }
 
-    componentDidMount(){
-        console.log("Passei aqui");
+    async componentDidMount(){
+        console.log("ComponentDidMount");
+
+        const response = await fetch("/api/recipe");
+        const recipeItem = await response.json();
+
                 this.setState({
                     isLoading: false,
-                    recipeItem: RECIPE,
+                    recipeItem,
                 })
-    }
+
+    };
 
     render(){
         return(
         
             <section className="page-two">
-                <Header src={logo} alt={"chefe"} name={"Palatare Restaurant"} title={"Palatare Restaurant"} subTitle={"Save and gain health!"}></Header>
+                <Header 
+                src={logo} 
+                alt={"chefe"} 
+                name={"Palatare Restaurant"} 
+                title={"Palatare Restaurant"} 
+                subTitle={"Save and gain health!"}>
+                </Header>
         
                 <Main>
                 
