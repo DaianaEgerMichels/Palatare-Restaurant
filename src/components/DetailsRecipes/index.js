@@ -2,9 +2,37 @@ import { Component } from "react";
 import IngredientMethod from "../IngredientMethod";
 import NutricionTable from "../NutricionTable";
 import PropTypes from "prop-types";
-import "./style.css";
+import "./detailsRecipes.css";
 
 class DetailsRecipes extends Component{
+    constructor(props){
+        super(props);
+
+        this.state = {
+            //isLoading= true,
+            nutricionTable: [],
+            ingredientMethod:[],
+        }
+    }
+
+    async componentDidMount(){
+        console.log("ComponentDidMount");
+
+        const response = await fetch("/api/nutricion");
+        const nutricionTable = await response.json();
+        const res = await fetch("/api/recipe");
+        const ingredientMethod = await res.json();
+
+
+                this.setState({
+                    //isLoading: false,
+                    nutricionTable,
+                    ingredientMethod,
+                })
+    }
+
+
+
     render(){
         return(
             <section className="container">
@@ -28,13 +56,20 @@ class DetailsRecipes extends Component{
                     </div>
                 </section>
 
-                <IngredientMethod ingredient={["100g saladas a gosto", "10 unidades de pão torrado","molho de tomate", "sal a gosto", "2 colheres de requeijão"]} preparation={"Misture tudo"}></IngredientMethod>
+                {this.state.ingredientMethod.map(({ingredient, preparation})=>{return <IngredientMethod  
+                        ingredient={ingredient} 
+                        preparation={preparation} 
+                />})};
+
 
                 <div className="table-container">
-                    <NutricionTable fruit={"Morango"} calories={"52 Kcal"} carbohydrates={"12g"}></NutricionTable>
-                    <NutricionTable fruit={"Uva"} calories={"61 Kcal"} carbohydrates={"9g"}></NutricionTable>
-                    <NutricionTable fruit={"Banana"} calories={"98 Kcal"} carbohydrates={"11g"}></NutricionTable>
-                    <NutricionTable fruit={"Abacate"} calories={"160 Kcal"} carbohydrates={"35g"}></NutricionTable>
+                    {this.state.nutricionTable.map(({fruit, calories, carbohydrates, proteins, lipids, fat})=>{return <NutricionTable  
+                        fruit={fruit} 
+                        calories={calories} 
+                        carbohydrates={carbohydrates} 
+                        proteins={proteins}
+                        lipids={lipids}
+                        fat={fat}/>})};
                 </div>
 
             </section>

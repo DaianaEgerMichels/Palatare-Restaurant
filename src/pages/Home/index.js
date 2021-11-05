@@ -7,9 +7,7 @@ import Footer from "../../components/Footer";
 import RecipesList from "../../components/RecipesList";
 import RecipeItem from "../../components/RecipeItem";
 import Search from "../../components/Search";
-import PageTwo from "../PageTwo";
-import "../../mock"
-
+import {Link} from "react-router-dom";
 
 class Home extends React.Component{
 
@@ -38,7 +36,7 @@ class Home extends React.Component{
     
     render(){
         return(
-            
+            //<Link to="/">
             <section className="home">
                 <Header 
                     src={logo} 
@@ -70,7 +68,7 @@ class Home extends React.Component{
                 </Main>
                 <Footer></Footer>
             </section>
-            
+            //</Link>
         )
     }
 }
