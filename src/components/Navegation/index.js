@@ -1,49 +1,42 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import "./style.css"
+import "./navegation.css"
 import {Link} from "react-router-dom";
+import Home from "../../pages/Home";
 
 class NavegationPages extends React.Component{
     
-    constructor(props){
+    /*constructor(props){
         super(props);
 
         this.state = {
-            isHomePage: true,
-            isPageRecipes: true,
-        }
+            isHomePage: <Home/>,
+       }
 
-    }
+    }*/
 
 
     render(){
         return(
-            <nav className="botoes">
-            {this.state.isHomePage && (
-                <nav className="botoes">
+            <>
+            {/*{this.state.isHomePage && (
+                 <div className="botoes">
                     <Link to = "/pageRecipes">
                     <button className="recipes" onClick={this.props.handleRecipes}>{this.props.name}</button>
                     </Link>
-                </nav>
-            )}
-            {!this.state.isHomePage && (
-                <nav className="botoes">
+                    </div>
+            )};
+            {!this.state.isHomePage && (*/}
+                <div className="botoes">
                     <Link to="/">
-                    <button className="init" onClick={this.props.handleHome}>{this.props.init}</button>
+                    <button className="init" >{this.props.init}</button>
                     </Link>
                     <Link to="/pageRecipes">
-                    <button className="recipes" onClick={this.props.handleRecipes}>{this.props.name}</button>
+                    <button className="recipes">{this.props.name}</button>
                     </Link>
-                </nav>
-            )}
-            {this.isPageRecipes && (
-                <nav className="botoes">
-                    <Link to="/">
-                    <button className="init" onClick={this.props.handleHome}>{this.props.init}</button>
-                    </Link>
-                </nav>
-            )}
-            </nav>
+               </div>
+            {/*})}*/}
+           </> 
         )
     }
 }
@@ -51,9 +44,6 @@ class NavegationPages extends React.Component{
 NavegationPages.propTypes={
     init: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    handleHome: PropTypes.func,
-    handleRecipes: PropTypes.func,
-
 }
 
 export default NavegationPages;

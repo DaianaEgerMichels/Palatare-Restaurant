@@ -38,10 +38,10 @@ header> .title-conteiner{
 
 header> .botoes{
         display: flex;
-        align-items: center;
-        flex-direction: row;
-        justify-content: flex-end;
-        gap: 10px;
+        flex-direction: row; 
+        margin-bottom: 20px;
+        margin-left: 100px;
+        width: 250px;
 }
 
 .img{

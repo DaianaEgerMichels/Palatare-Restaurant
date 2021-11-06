@@ -7,7 +7,7 @@ import Footer from "../../components/Footer";
 import RecipesList from "../../components/RecipesList";
 import RecipeItem from "../../components/RecipeItem";
 import Search from "../../components/Search";
-import {Link} from "react-router-dom";
+
 
 class Home extends React.Component{
 
@@ -35,12 +35,14 @@ class Home extends React.Component{
                     recipeItem,
                 })
 
+                
+
     };
 
     
     render(){
         return(
-            //<Link to="/">
+         
             <section className="home">
                 <Header 
                     src={logo} 
@@ -55,10 +57,13 @@ class Home extends React.Component{
                         placeholder={"Type here what you are looking for..."}
                         onChange={(event)=>{
                             const text = event.target.value;
-                            console.log(text);
                             
                             const resultFilter = this.listSearch.filter((recipe)=>{
                                 return recipe.title.includes(text);
+                            })
+
+                            this.setState({
+                                recipeItem: resultFilter
                             })
                             }}>
                     </Search>
@@ -77,7 +82,7 @@ class Home extends React.Component{
                 </Main>
                 <Footer></Footer>
             </section>
-            //</Link>
+          
         )
     };
 }

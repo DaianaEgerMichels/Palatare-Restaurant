@@ -190,8 +190,6 @@ const RECIPE = [
     "lemon zest to taste",
     "1 cup of fresh grated coconut",],
     "preparation": `
-    362 / 5000
-    Resultados de tradução
     Cut the buns into rounds approximately 2 cm thick each. 
     Distribute the bread slices at the bottom of the refractory. 
     In a blender, beat milk, eggs and sugar. Add the lemon zest and coconut. 

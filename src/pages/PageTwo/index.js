@@ -55,7 +55,8 @@ class PageTwo extends React.Component{
                         author={author} 
                         time={time} 
                         portions={portions}
-                        />}))}
+                        />
+                        }))}
                 </Main>
                 <Footer></Footer>
             </section>

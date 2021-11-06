@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: space-evenly;
     gap:20px;
 }
 
@@ -31,6 +32,7 @@ img{
     flex-direction: row;
     justify-content: space-evenly;
     gap:10px;
+    margin-left:150px;
 }
 
 .grid-details> h3, p, button{
