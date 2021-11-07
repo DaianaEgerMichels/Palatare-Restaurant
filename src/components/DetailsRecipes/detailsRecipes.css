@@ -41,6 +41,11 @@ img{
     color: black;
 }
 
+.btn-like:active{
+    background-color: blue;
+}
+
+
 .grid-image> h1 {
     font-family: 'Rosellinda', 'Times New Roman', Times, serif;
     font-size: 50px;

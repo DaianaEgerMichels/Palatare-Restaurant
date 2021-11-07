@@ -3,6 +3,7 @@ import IngredientMethod from "../IngredientMethod";
 import NutricionTable from "../NutricionTable";
 import PropTypes from "prop-types";
 import "./detailsRecipes.css";
+import { buildQueries } from "@testing-library/react";
 
 class DetailsRecipes extends Component{
     constructor(props){
@@ -32,7 +33,6 @@ class DetailsRecipes extends Component{
     }
 
 
-
     render(){
         return(
             <section className="container">
@@ -52,7 +52,7 @@ class DetailsRecipes extends Component{
                     </div>
                     
                     <div className="like">
-                        <button onClick={this.props.handleColor}>Like</button>
+                        <button className="btn-like" onClick={this.props.handleColor}>Like</button>
                     </div>
                 </section>
 
@@ -60,7 +60,7 @@ class DetailsRecipes extends Component{
                     <div className="ingredients">
                         <h3>Ingredients</h3>
                         <ul>
-                            <li>{this.props.ingredient}</li>
+                            <li>{this.props.ingredients}</li>
                         </ul>
                     </div>
                     <div className="method">
@@ -82,7 +82,7 @@ class DetailsRecipes extends Component{
                         carbohydrates={carbohydrates} 
                         proteins={proteins}
                         lipids={lipids}
-                        fat={fat}/>})};
+                        fat={fat}/>})}
                 </div>
 
             </section>
@@ -99,7 +99,7 @@ DetailsRecipes.propTypes = {
     time: PropTypes.string.isRequired,
     portions: PropTypes.string.isRequired,
     handleColor: PropTypes.func,
-    ingredient: PropTypes.array,
+    ingredients: PropTypes.array,
     preparation: PropTypes.string.isRequired,
 
 }
