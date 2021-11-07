@@ -8,8 +8,9 @@ const RECIPE = [
         "author": "A. Shutterstock",
         "time": "15 minutes",
         "portions": "1 cup",
-        "ingredients": ["3 tablespoons of beet stalks", "3 tablespoons of spinash stalks",
-         "1 American cup of ricotta or mayonnaise"],
+        "ingredients": ["3 tablespoons of beet stalks", 
+        "3 tablespoons of spinash stalks",
+        "1 American cup of ricotta or mayonnaise"],
         "preparation": `Beat the stalks in a blender with 1 tablespoon of ricotta or mayonnaise. 
         Mix the obtained paste with the rest of the ricotta or mayonnaise. Store in refrigerator. 
         Serve with bread, toast or crackers`,
@@ -24,8 +25,11 @@ const RECIPE = [
         "author": "Karla Precioso",
         "time": "45 minutes",
         "portions": "20 units",
-        "ingredients": ["1 can of condensed milk", "1 tablespoon unsalted butter", 
-        "4 tablespoons of powdered dark chocolate", "2 banana peel", "Granulated chocolate for pastry"],
+        "ingredients": ["1 can of condensed milk", 
+        "1 tablespoon unsalted butter", 
+        "4 tablespoons of powdered dark chocolate",
+        "2 banana peel",
+        "Granulated chocolate for pastry"],
         "preparation": `
         Wash the banana peels well and cut them. Then, blend all the ingredients
         in a blender and bring the mixture to a low heat, stirring constantly until 
@@ -44,7 +48,7 @@ const RECIPE = [
         "portions": "6 portions",
         "ingredients": ["4 tablespoons of pumpkin seed",
         "1 1/2 cup pre-cooked pumpkin",
-        "½ cup of onion tea",
+        "1/2 cup of onion tea",
         "2 tablespoons of oil",
         "salt to taste",
         "1 tablespoon of grated cheese",
@@ -84,7 +88,9 @@ const RECIPE = [
         "author": "A. Shutterstock",
         "time": "30 minutes",
         "portions": "1 cup of sweet",
-        "ingredients": ["2 orange peel", "2 tablespoons of sugar", "2 tablespoons of roasted wheat bran"],
+        "ingredients": ["2 orange peel", 
+        "2 tablespoons of sugar", 
+        "2 tablespoons of roasted wheat bran"],
         "preparation": `Cut the skins into strips and soak, changing the water every two hours.
         Melt the sugar over the fire and add the dried skins. When the syrup starts to ticken, 
         add the wheat bran. Stir until sugary.`,
@@ -156,7 +162,7 @@ const RECIPE = [
         "2 tablespoons of grated parmesan cheese",
         "Half a cup of chopped green onion tea",
         "Half a cup of chopped parsley tea",
-        "1 teaspoon of baking powder",
+       "1 teaspoon of baking powder",
         "salt to taste",],
         "preparation": `In a deep dish mix the cooked rice, milk, beaten eggs, 
         Worcestershire sauce, Parmesan cheese, parsley, chives and pepper and salt.

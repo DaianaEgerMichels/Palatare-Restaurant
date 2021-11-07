@@ -59,7 +59,7 @@ class Home extends React.Component{
                             const text = event.target.value;
                             
                             const resultFilter = this.listSearch.filter((recipe)=>{
-                                return recipe.title.includes(text);
+                                return recipe.title.toLowerCase().includes(text.toLowerCase());
                             })
 
                             this.setState({
