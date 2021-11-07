@@ -56,10 +56,23 @@ class DetailsRecipes extends Component{
                     </div>
                 </section>
 
-                {this.state.ingredientMethod.map(({ingredient, preparation})=>{return <IngredientMethod  
+                <section className="recipe-description">
+                    <div className="ingredients">
+                        <h3>Ingredients</h3>
+                        <ul>
+                            <li>{this.props.ingredient}</li>
+                        </ul>
+                    </div>
+                    <div className="method">
+                        <h3>Method of Preparation</h3>
+                        <p>{this.props.preparation}</p>
+                    </div>
+                </section>
+
+                {/*{this.state.ingredientMethod.map(({ingredient, preparation})=>{return <IngredientMethod  
                         ingredient={ingredient} 
                         preparation={preparation} 
-                />})};
+                />})};*/}
 
 
                 <div className="table-container">
@@ -86,6 +99,8 @@ DetailsRecipes.propTypes = {
     time: PropTypes.string.isRequired,
     portions: PropTypes.string.isRequired,
     handleColor: PropTypes.func,
+    ingredient: PropTypes.array,
+    preparation: PropTypes.string.isRequired,
 
 }
 

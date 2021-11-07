@@ -47,7 +47,7 @@ class PageTwo extends React.Component{
                 
                 {this.state.isLoading && "Loading..."}
                 {!this.state.isLoading && (
-                       this.state.recipeItem.map(({src, alt, title, subTitle, author, time, portions})=>{return <DetailsRecipes 
+                       this.state.recipeItem.map(({src, alt, title, subTitle, author, time, portions,ingredient,preparation})=>{return <DetailsRecipes 
                         src={src} 
                         alt={alt} 
                         title={title} 
@@ -55,6 +55,8 @@ class PageTwo extends React.Component{
                         author={author} 
                         time={time} 
                         portions={portions}
+                        ingredient={ingredient}
+                        preparation={preparation}
                         />
                         }))}
                 </Main>
